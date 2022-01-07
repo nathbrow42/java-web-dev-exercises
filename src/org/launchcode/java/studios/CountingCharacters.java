@@ -1,6 +1,7 @@
 package org.launchcode.java.studios;
 
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -15,6 +16,7 @@ public class CountingCharacters {
         System.out.println("Enter the string:");
         str = input.nextLine();
 
+        str = str.toLowerCase();
 
         char[] charArr = str.toCharArray();
         HashMap<Character, Integer> charHash = new HashMap<>();
